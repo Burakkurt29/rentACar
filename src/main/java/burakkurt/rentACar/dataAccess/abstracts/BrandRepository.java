@@ -1,10 +1,8 @@
 package burakkurt.rentACar.dataAccess.abstracts;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import burakkurt.rentACar.entities.concretes.Brand;
 
-public interface BrandRepository {
-    List<Brand> getAll();
-
+public interface BrandRepository extends JpaRepository<Brand,Integer> {
 }
